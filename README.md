@@ -16,13 +16,19 @@ The deployment of computer vision for Plant Disease Diagnosis (PDD) faces a trad
 
 ## Results
 
-<!-- TODO: replace with your actual image paths, e.g. assets/confusion_matrix.png -->
+### Final Model Performance
+
 | Training Curves | Confusion Matrix |
 |---|---|
 | ![Training curves](assets/BestParams.png) | ![Confusion matrix](assets/conf_mat_annot.png) |
 
+
+### Augmentation Results
+#### Comparison of untuned model performance on original and augmented datasets
 <!-- TODO: add any additional figures here — e.g. sample predictions, FlipMix ablation bar chart, patch size vs. precision/time trade-off plot -->
 ![Ablation results vs baseline](assets/og_vs_aug.png)
+#### Class Balance before and after augmentation
+![Class Balance](assets/fieldplant_class_balance_v_aug.png)
 
 ## Method Overview
 
@@ -57,8 +63,6 @@ For full methodology, experiments, and discussion, see the [paper](paper/augvit-
 | pip | 26.0.1 |
 | Jupyter Notebook | 2025.9.1 |
 | PyTorch | 2.11.0+cu126 |
-
-<!-- TODO: add other key libraries if relevant, e.g. timm, torchvision, scikit-learn, albumentations -->
 
 ## Dataset
 
